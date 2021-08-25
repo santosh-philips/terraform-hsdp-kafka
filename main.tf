@@ -26,9 +26,6 @@ resource "hsdp_container_host" "kafka" {
   user         = var.user
   private_key  = var.private_key
 
-  commands = [
-    "docker volume create kafka"
-  ]
 }
 
 resource "hsdp_container_host_exec" "cluster" {
