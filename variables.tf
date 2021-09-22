@@ -151,3 +151,9 @@ variable "max_partition_fetch_bytes" {
   default     = 1048576
   type        = number
 }
+
+variable "subnet_type" {
+  type        = string
+  description = "The subnet type to provision Kafka instances in. Can be 'public' or 'private'"
+  default     = "private"
+}
